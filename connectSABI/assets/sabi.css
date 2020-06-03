@@ -1,0 +1,68 @@
+body{
+    background-color: black;
+    
+}
+.row{
+    background-color: #FF9C2A;
+    width: 65%;
+    margin: auto;
+    
+   
+}
+.login, .register{
+    background-color: #FF9C2A;
+    border-radius: 12px;
+    margin:5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.submit{
+    background-color: black;
+}
+.loginform {
+
+    background-color: aliceblue;
+    margin: 4%;
+    color: aliceblue;
+    align-items: center;
+    padding: 4%;
+    height: 100%;
+    margin-right:10%;
+}
+label{
+    color: red;
+    
+}
+.registercontent {
+
+   
+    color: aliceblue;
+    align-items: center;
+    padding: 4%;
+    height: 100%;
+    margin: auto;
+    margin-right: 0;
+    margin-left: auto;
+   
+}
+
+.logincontent {
+    color: aliceblue;
+    align-items: center;
+    padding: 4%;
+    height: 100%;
+    margin: auto;
+    margin-right: auto;
+    margin-left: 0;
+   
+}
+.registerform {
+
+    background-color: aliceblue;
+    margin: 4%;
+    color: aliceblue;
+    align-items: center;
+    padding: 4%;
+    height: 100%;
+    margin-left:10%;
+}
