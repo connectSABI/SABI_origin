@@ -123,3 +123,11 @@ STATICFILES_DIR = [
     os.path.join(BASE_DIR, 'befLogn', 'static')
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
+
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'vanshrana2012@gmail.com'
+EMAIL_HOST_PASSWORD = 'akarsh@123'
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
