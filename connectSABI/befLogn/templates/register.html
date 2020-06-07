@@ -1,86 +1,114 @@
 {%load static%}
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>SABI</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-       
-        
-        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Shade&family=Fredericka+the+Great&family=Rancho&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="{%static 'befLogn/css/register.css'%}">    
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-         <script>
-            $(document).ready(function(){
-              $(".nextpage").click(function(){
-                $(".otpform").fadeOut()
-                  $(".otpcontent").fadeOut(function(){
-                       $(".passwordform").fadeIn(function(){
-                           $(".userform").fadeIn();
-                       
-                       })
-                            
-                    });
-                       
-              });
-             
-                
-            });
-        </script>
-    </head>
-    <body>
 
-         <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
-             <a class="navbar-brand text-danger" href="#">SABI</a>
-                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                     <ul class="navbar-nav mr-auto">
-                         <li class="nav-item active">
-                         <a class="nav-link text-warning" href="/">Home <span class="sr-only">(current)</span></a>
-                         </li>
-                     </ul>
-                     <ul class="nav navbar-nav navbar-right nav-link">
-                         <li class="p-2 m-x-2"><a href="/" class="text-warning">Sign in</a></li>
-                         <li class="p-2 m-x-2"><a href="/" class="text-warning">Signup</a></li>
+<head>
+  <title>SABI</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-                     </ul>
 
-                 </div>
-        </nav>
-         <svg id="sabi-svg" class="my-5" width="358" height="208" >
-			<style>
-				 svg{
-            position: relative;
-            left: 10%;
-            transform: translateX(-40%);
-         }
-				 .container {
-    width: 15%;
-		 height:0;
-    padding-top:30%;
-    position: relative;
-}
+  <link
+    href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Shade&family=Fredericka+the+Great&family=Rancho&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="{%static 'befLogn/css/register.css'%}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".next").click(function () {
+        $(".otpform").fadeOut()
+        $(".otpcontent").fadeOut(function () {
+          $(".passwordform").fadeIn(function () {
+            $(".userform").fadeIn();
 
- #sabi-svg{
-		 stroke-dasharray:600;
-	 stroke-dashoffset:0;}
-svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-	 .st0{fill:none;stroke:#FF9C2A;stroke-width:2.6463;}
-			.st1{fill:none;stroke:#005AAA;stroke-width:2.6463;}
-			.st2{fill:none;stroke:#D41700;stroke-width:2.6463;}
-			.st3{fill:none;stroke:#00E900;stroke-width:2.6463;} svg{
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-         }
-    
-        
- 
-			</style>
-			  <path class="st0" d="M75.8,56.27h1.83c8.49,0,16.37,3.14,23.64,9.41c5.73,6.01,8.6,12.78,8.6,20.32c0,3.88-2.14,6.61-6.43,8.19
+          })
+
+        });
+
+      });
+
+
+    });
+  </script>
+</head>
+
+<body>
+
+  <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand text-danger" href="#">SABI</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-warning" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right nav-link">
+        <li class="p-2 m-x-2"><a href="/" class="text-warning">Sign in</a></li>
+        <li class="p-2 m-x-2"><a href="/" class="text-warning">Signup</a></li>
+
+      </ul>
+
+    </div>
+  </nav>
+  <svg id="sabi-svg" class="my-5" width="358" height="208">
+    <style>
+      svg {
+        position: relative;
+        left: 10%;
+        transform: translateX(-40%);
+      }
+
+      .container {
+        width: 15%;
+        height: 0;
+        padding-top: 30%;
+        position: relative;
+      }
+
+      #sabi-svg {
+        stroke-dasharray: 600;
+        stroke-dashoffset: 0;
+      }
+
+      svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .st0 {
+        fill: none;
+        stroke: #FF9C2A;
+        stroke-width: 2.6463;
+      }
+
+      .st1 {
+        fill: none;
+        stroke: #005AAA;
+        stroke-width: 2.6463;
+      }
+
+      .st2 {
+        fill: none;
+        stroke: #D41700;
+        stroke-width: 2.6463;
+      }
+
+      .st3 {
+        fill: none;
+        stroke: #00E900;
+        stroke-width: 2.6463;
+      }
+
+      svg {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    </style>
+    <path class="st0" d="M75.8,56.27h1.83c8.49,0,16.37,3.14,23.64,9.41c5.73,6.01,8.6,12.78,8.6,20.32c0,3.88-2.14,6.61-6.43,8.19
 				c-0.95,0.09-1.51,0.2-1.69,0.34c-3.07,0-5.55-1.56-7.45-4.67c-0.54-0.99-0.95-3.34-1.22-7.04c-1.26-3.7-3.27-6.23-6.03-7.59
 				c-3.12-1.76-6.59-2.64-10.43-2.64c-7.36,0-12.3,2.89-14.83,8.67c-0.5,1.45-0.74,3.18-0.74,5.21v0.61c0,2.03,1.9,4.04,5.69,6.03
 				c2.03,2.08,3.05,4.18,3.05,6.3c0,3.43-1.9,6.01-5.69,7.72c-0.81,0.32-1.58,0.47-2.3,0.47h-0.34c-3.39,0-7.7-2.82-12.94-8.47
@@ -91,89 +119,93 @@ svg {
 				c0.41-1.49,0.61-2.93,0.61-4.33v-0.74c0-0.95-0.93-2.55-2.78-4.81c-0.72-1.44-1.08-2.78-1.08-4c0-3.61,2.01-6.19,6.03-7.72
 				C96.03,105.73,96.8,105.57,97.88,105.44z M79.8,97.58h0.61c3.7,0,6.28,2.21,7.72,6.64c0.14,0.72,0.2,1.29,0.2,1.69
 				c0,3.7-2.21,6.32-6.64,7.86c-0.72,0.09-1.29,0.14-1.69,0.14c-3.75,0-6.37-2.14-7.86-6.43c-0.14-0.54-0.2-1.02-0.2-1.42v-0.61
-				c0-3.52,2.01-6.03,6.03-7.52C78.69,97.7,79.3,97.58,79.8,97.58z"/>
-			<path class="st1" d="M164.32,56.2c4.47,0,7.88,3.52,10.23,10.57c12.69,26.55,19.08,40.23,19.17,41.04
+				c0-3.52,2.01-6.03,6.03-7.52C78.69,97.7,79.3,97.58,79.8,97.58z" />
+    <path class="st1" d="M164.32,56.2c4.47,0,7.88,3.52,10.23,10.57c12.69,26.55,19.08,40.23,19.17,41.04
 				c0.18,0.41,0.27,0.99,0.27,1.76v0.68c0,3.84-2.33,6.55-6.98,8.13c-0.72,0.09-1.31,0.14-1.76,0.14c-4.11,0-7.25-3.02-9.41-9.08
 				c-7.18-15.44-11.02-23.55-11.51-24.31h-0.34c-19.55,41.18-30.05,62.85-31.49,65.02c-2.03,2.08-4.24,3.12-6.64,3.12
 				c-3.66,0-6.37-2.1-8.13-6.3l-0.47-2.3c0-1.58,1.9-6.12,5.69-13.61c21.85-45.42,33.32-69.17,34.4-71.25
 				C159.55,57.4,161.88,56.2,164.32,56.2z M202.79,135.92c3.52,0,6.16,1.94,7.92,5.82c0.32,0.99,0.54,1.92,0.68,2.78
 				c0,3.21-1.67,5.8-5.01,7.79c-0.54,0.32-1.74,0.63-3.59,0.95c-4.06,0-6.93-2.32-8.6-6.98c-0.14-1.13-0.2-1.78-0.2-1.96
-				c0-3.75,2.24-6.46,6.7-8.13C201.63,136.01,202.33,135.92,202.79,135.92z"/>
-			<path class="st2" d="M228.45,56h29.12c14,0,23.37,6.93,28.11,20.79c0.86,3.43,1.29,6.37,1.29,8.8c0,6.5-2.21,12.69-6.64,18.56
+				c0-3.75,2.24-6.46,6.7-8.13C201.63,136.01,202.33,135.92,202.79,135.92z" />
+    <path class="st2" d="M228.45,56h29.12c14,0,23.37,6.93,28.11,20.79c0.86,3.43,1.29,6.37,1.29,8.8c0,6.5-2.21,12.69-6.64,18.56
 				v0.14c5.51,6.19,8.26,12.96,8.26,20.32v1.63c0,8.76-3.79,16.1-11.38,22.01c-4.7,3.34-10.77,5.01-18.22,5.01h-30.54
 				c-4.88,0-7.97-2.32-9.28-6.98c-0.23-0.54-0.34-1.51-0.34-2.91v-37.45c0-5.06,2.28-8.31,6.84-9.75l1.63-0.14h30.27
 				c5.33,0,8.78-1.35,10.36-4.06c1.08-1.94,1.63-3.75,1.63-5.42v-1.76c0-5.01-2.33-8.65-6.98-10.9c-1.17-0.32-2.3-0.47-3.39-0.47
 				h-30.75c-4.97,0-8.13-2.44-9.48-7.31c0-0.41-0.05-0.9-0.14-1.49c0-3.48,2.01-6.19,6.03-8.13C226.22,56.16,227.41,56,228.45,56z
 				 M236.24,113.23v22.62h25.06c5.55,0,8.85-2.75,9.89-8.26c0.14-0.54,0.2-1.26,0.2-2.17c0-5.6-2.35-9.44-7.04-11.51
-				c-1.17-0.45-2.73-0.68-4.67-0.68H236.24z"/>
-			<path class="st3" d="M306.88,56.2h0.14c4.06,0,6.88,2.21,8.47,6.64c0.23,1.08,0.34,2.17,0.34,3.25v77.27
+				c-1.17-0.45-2.73-0.68-4.67-0.68H236.24z" />
+    <path class="st3" d="M306.88,56.2h0.14c4.06,0,6.88,2.21,8.47,6.64c0.23,1.08,0.34,2.17,0.34,3.25v77.27
 				c0,5.1-2.23,8.29-6.7,9.55c-0.45,0.23-1.15,0.34-2.1,0.34h-0.14c-3.52,0-6.19-2.01-7.99-6.03c-0.32-1.13-0.47-2.1-0.47-2.91
-				V65.14c0-4.15,2.17-7.02,6.5-8.6C305.68,56.32,306.34,56.2,306.88,56.2z"/>
-			
-				
-				<script>
-					anime({
-				  targets: ' #sabi-svg path',
-				  strokeDashoffset: [anime.setDashoffset, 50],
-				  easing: 'easeInOutSine',
-				  duration: 3000,
-				  delay: function(el, i) { return i * 250 },
-				  direction: 'alternate',
-				  loop: true
-				});
-				</script>
-				</svg>
+				V65.14c0-4.15,2.17-7.02,6.5-8.6C305.68,56.32,306.34,56.2,306.88,56.2z" />
 
 
-        <div class="row">
-            <div class="col-6 otpform">
-                 <form>
-                      <div class="form-group">
-                        <label for="exampleforOTP"><strong>OTP</strong></label>
-                        <input type="number" placeholder="OTP" class="form-control"  aria-describedby="emailHelp">
-                      </div>
-                        <button type="submit" class="btn submit">Submit</button>
-                  </form>
-            </div>
-             <div class="col-3 otpcontent">
-                <h2>Enter the OTP sent to your E-mail to create your User details</h2>
-                <button class="nextpage" ><h4>Next</h4></button>
-            </div>
+    <script>
+      anime({
+        targets: ' #sabi-svg path',
+        strokeDashoffset: [anime.setDashoffset, 50],
+        easing: 'easeInOutSine',
+        duration: 3000,
+        delay: function (el, i) { return i * 250 },
+        direction: 'alternate',
+        loop: true
+      });
+    </script>
+  </svg>
+
+
+  <div class="row">
+    <div class="col-6 otpform">
+      <form method='POST'>
+        <div class="form-group">
+          <label for="exampleforOTP"><strong>OTP</strong></label>
+          {%csrf_token%}
+          {{form.as_p}}
+          <!-- <input type="number" placeholder="OTP" class="form-control"  aria-describedby="emailHelp"> -->
         </div>
-         <div class="row">
-            <div class="col-4 passwordform">
-                 <form>
-                      <div class="form-group">
-                        <label for="CreatePassword"><strong>Create Password</strong></label>
-                        <input type="text" placeholder="password" class="form-control"  aria-describedby="emailHelp">
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputPassword1"><strong>Confirm Password</strong></label>
-                        <input type="password" placeholder="Confirm Password" class="form-control" id="exampleInputPassword1">
-                      </div>
-                        
-                  </form>
-            </div>
-        
-         
-            <div class="col-4 userform">
-                 <form>
-                      <div class="form-group">
-                        <label for="Username"><strong>Username</strong></label>
-                        <input type="text" placeholder="Username" class="form-control"  aria-describedby="emailHelp">
-                      </div>
-                      <div class="form-group">
-                        <label for="firstname"><strong>Firstname</strong></label>
-                        <input type="text" placeholder="Firstname" class="form-control">
-                      </div>
-                       <div class="form-group">
-                        <label for="lastname"><strong>Lastame</strong></label>
-                        <input type="text" placeholder="Lastname" class="form-control">
-                      </div>
-                        <button type="submit" class="btn submit">Submit</button>
-                  </form>
-            </div>
-              <button class="previospage" ><h4>Back</h4></button>
+        <button type="submit" class="btn submit">Submit</button>
+      </form>
+    </div>
+    <div class="col-3 otpcontent">
+      <h2>Enter the OTP sent to your E-mail to create your User details</h2>
+      <button class="next" href="/register">
+        <h4>Next</h4>
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4 passwordform">
+      <form>
+        <div class="form-group">
+          <label for="CreatePassword"><strong>Create Password</strong></label>
+          <input type="text" placeholder="password" class="form-control" aria-describedby="emailHelp">
         </div>
-    </body>
+        <div class="form-group">
+          <label for="exampleInputPassword1"><strong>Confirm Password</strong></label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn submit">Submit</button>
+      </form>
+    </div>
+
+
+    <div class="col-4 userform">
+      <form>
+        <div class="form-group">
+          <label for="Username"><strong>Username</strong></label>
+          <input type="text" placeholder="Username" class="form-control" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group">
+          <label for="firstname"><strong>Firstname</strong></label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="lastname"><strong>Lastame</strong></label>
+          <input type="text" class="form-control">
+        </div>
+        <button type="submit" class="btn submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+
 </html>

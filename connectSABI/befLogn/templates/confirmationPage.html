@@ -8,8 +8,12 @@
 </head>
 
 <body>
-	<p>Confirmation mail sent! <br> Please Check your email id
-	<p>
+	<p>{{name}}</p>
+	<form method='POST'>
+		{%csrf_token%}
+		{{form.as_p}}
+		<button type="submit">Submit</button>
+	</form>
 </body>
 
 </html>

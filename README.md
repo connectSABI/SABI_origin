@@ -21,11 +21,8 @@
 	* Go to accounts.google.com/DisplayUnlockCaptcha
 	* Click continue and do whatever it asks
 * Setup environment variable for username and password
-	* In your terminal activate the environment
-	* Enter the commands
-		* set U_EMAIL='this@that.com'
-		* set EMAIL_PASS='replace with your password'
-* Mailer is ready
+	* Run setVariables.py and enter required fields
+	* If your email and password is shown as output then variables are set
 
 ## Setting up database
 * To be added

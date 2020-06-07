@@ -1,0 +1,102 @@
+body{
+    background-color: black;
+    
+}
+.row{
+    background-color: #FF9C2A;
+    width: 65%;
+    margin: auto;
+    
+   
+}
+button{
+    background-color: #FF9C2A;
+    border-radius: 12px;
+    margin:5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.submit{
+    background-color: black;
+}
+.loginform {
+
+    background-color: aliceblue;
+    margin: 4%;
+    color: aliceblue;
+    align-items: center;
+    padding: 4%;
+    height: 100%;
+    margin-right:10%;
+}
+label{
+    color: red;
+    
+}
+.registercontent {
+
+   
+    color: aliceblue;
+    align-items: center;
+    padding: 4%;
+    height: 100%;
+    margin: auto;
+    margin-right: 0;
+    margin-left: auto;
+   
+}
+
+.logincontent {
+    color: aliceblue;
+    align-items: center;
+    padding: 4%;
+    height: 100%;
+    margin: auto;
+    margin-right: auto;
+    margin-left: 0;
+   
+}
+.registerform {
+
+    background-color: aliceblue;
+    margin: 4%;
+    color: aliceblue;
+    align-items: center;
+    padding: 4%;
+    height: 100%;
+    margin-left:10%;
+}
+
+
+				 svg{
+            position: relative;
+            left: 10%;
+            transform: translateX(-40%);
+         }
+				 .container {
+    width: 15%;
+		 height:0;
+    padding-top:30%;
+    position: relative;
+}
+
+ #sabi-svg{
+		 stroke-dasharray:600;
+	 stroke-dashoffset:0;}
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+	 .st0{fill:none;stroke:#FF9C2A;stroke-width:2.6463;}
+			.st1{fill:none;stroke:#005AAA;stroke-width:2.6463;}
+			.st2{fill:none;stroke:#D41700;stroke-width:2.6463;}
+			.st3{fill:none;stroke:#00E900;stroke-width:2.6463;} svg{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+         }
+    
+        
+ 
+			

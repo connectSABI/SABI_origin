@@ -17,7 +17,7 @@
     $(document).ready(function () {
 
       $(".logincontent").fadeOut()
-       $(".registerform").fadeOut()
+      $(".registerform").fadeOut()
       $(".login").click(function () {
         $(".logincontent").fadeOut()
         $(".registerform").fadeOut(function () {
@@ -166,20 +166,20 @@
       <button>
         <h4>Login</h4>
       </button>
-      <form>
+      <form method="POST">
         <div class="form-group">
           <label for="exampleInputEmail1"><strong>Email address</strong></label>
-          <input type="email" placeholder="abc@iitbbs.ac.in" class="form-control" id="exampleInputEmail1"
-            aria-describedby="emailHelp">
+          <input type="email" placeholder="abc@iitbbs.ac.in" class="form-control" name="inputEmail"
+            id="exampleInputEmail1" aria-describedby="emailHelp">
           <small id="emailHelp" class="form-text text-muted">Well everyone in the campus knows your email Id. So, stop
             doubting start typing</small>
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1"><strong>Password</strong></label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <input type="password" class="form-control" name="password" id="exampleInputPassword1">
         </div>
         <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <input type="checkbox" class="form-check-input" name="checkBox" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Keep me signed in!! I trust you
             <strong>:&#41;</strong></label>
         </div>
@@ -205,11 +205,11 @@
       <button>
         <h4>register</h4>
       </button>
-      <form method="POST">
+      <form action="/register" method="POST">
         {%csrf_token%}
         <div class="form-group">
           <label for="exampleInputEmail1"><strong>Email address</strong></label>
-          <input type="email" placeholder="abc@iitbbs.ac.in" class="form-control" id="registerEmail"
+          <input type="email" placeholder="abc@iitbbs.ac.in" name = 'registerEmail' class="form-control" id="registerEmail"
             aria-describedby="emailHelp">
           <small id="emailHelp" class="form-text text-muted">Well everyone in the campus knows your email Id. So, stop
             doubting start typing<br>We will send you a confirmation email!!</small>
