@@ -26,6 +26,9 @@
 		* set U_EMAIL='this@that.com'
 		* set EMAIL_PASS='replace with your password'
 * Mailer is ready
+<<<<<<< HEAD
 
 ## Setting up database
 * To be added
+=======
+>>>>>>> 8a5d7bcab8742f929efa444c48c8b9fce578fdce
