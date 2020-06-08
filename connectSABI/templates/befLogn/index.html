@@ -166,17 +166,19 @@
       <button>
         <h4>Login</h4>
       </button>
-      <form method="POST">
+      
+      <form method="POST" action="login">
+        {%csrf_token%}
         <div class="form-group">
-          <label for="exampleInputEmail1"><strong>Email address</strong></label>
-          <input type="email" placeholder="abc@iitbbs.ac.in" class="form-control" name="inputEmail"
+          <label for="exampleInputEmail1"><strong>Username</strong></label>
+          <input type="text" placeholder="abc@iitbbs.ac.in" class="form-control" name="loginusername"
             id="exampleInputEmail1" aria-describedby="emailHelp">
           <small id="emailHelp" class="form-text text-muted">Well everyone in the campus knows your email Id. So, stop
             doubting start typing</small>
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1"><strong>Password</strong></label>
-          <input type="password" class="form-control" name="password" id="exampleInputPassword1">
+          <input type="password" class="form-control" name="loginpassword" id="exampleInputPassword1">
         </div>
         <div class="form-group form-check">
           <input type="checkbox" class="form-check-input" name="checkBox" id="exampleCheck1">
@@ -185,6 +187,7 @@
         </div>
         <button type="submit" class="btn submit">Submit</button>
       </form>
+    
     </div>
     <div class="col-3 registercontent">
       <h2>Is it your first time and want to register?</h2>

@@ -8,7 +8,7 @@ from . import forms
 
 
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'befLogn/index.html')
 
 
 def register(request):
@@ -39,3 +39,5 @@ def formCheck(request):
         'name': 'Akarsh'
     }
     return render(request, 'confirmationPage.html', context)
+
+    
