@@ -9,7 +9,7 @@ def login(request):
     user = auth.authenticate(username=loginusername,password=loginpassword)
     # print(loginusername,loginpassword)
     if user is not None:
-        auth.login(request,None)
+        auth.login(request,user)
         return render(request,'afterlogin/home.html')
     else:
         # print("I am here")

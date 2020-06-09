@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="{%static 'befLogn/css/register.css'%}">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
+  <!-- <script>
     $(document).ready(function () {
       $(".next").click(function () {
         $(".otpform").fadeOut()
@@ -31,7 +31,7 @@
 
 
     });
-  </script>
+  </script> -->
 </head>
 
 <body>
@@ -152,7 +152,7 @@
     </script>
   </svg>
 
-
+  <!-- 
   <div class="row">
     <div class="col-6 otpform">
       <form method='POST'>
@@ -160,7 +160,7 @@
           <label for="exampleforOTP"><strong>OTP</strong></label>
           {%csrf_token%}
           {{form.as_p}}
-          <!-- <input type="number" placeholder="OTP" class="form-control"  aria-describedby="emailHelp"> -->
+          <input type="number" placeholder="OTP" class="form-control"  aria-describedby="emailHelp">
         </div>
         <button type="submit" class="btn submit">Submit</button>
       </form>
@@ -171,9 +171,9 @@
         <h4>Next</h4>
       </button>
     </div>
-  </div>
+  </div> -->
   <div class="row">
-    <div class="col-4 passwordform">
+    <!-- <div class="col-4 passwordform">
       <form>
         <div class="form-group">
           <label for="CreatePassword"><strong>Create Password</strong></label>
@@ -185,23 +185,37 @@
         </div>
         <button type="submit" class="btn submit">Submit</button>
       </form>
-    </div>
+    </div> -->
 
 
     <div class="col-4 userform">
-      <form>
+      <form method="POST">
+        {%csrf_token%}
+        {% for field in form %}
         <div class="form-group">
-          <label for="Username"><strong>Username</strong></label>
-          <input type="text" placeholder="Username" class="form-control" aria-describedby="emailHelp">
+          {{field.errors}}
+          {{field}}
         </div>
-        <div class="form-group">
+        {% endfor %}
+        {% if not pMatch%}
+        <p>Passwords do not match</p><br>
+        {%endif%}
+        {% if uName%}
+        <p>Username not available</p><br>
+        {%endif%}
+        {% if success%}
+        <p>Sign up successfull</p><br>
+        <a href="/">Click here</a>
+        <p>to login</p><br>
+        {%endif%}
+        <!-- <div class="form-group">
           <label for="firstname"><strong>Firstname</strong></label>
           <input type="text" class="form-control">
         </div>
         <div class="form-group">
           <label for="lastname"><strong>Lastame</strong></label>
           <input type="text" class="form-control">
-        </div>
+        </div> -->
         <button type="submit" class="btn submit">Submit</button>
       </form>
     </div>

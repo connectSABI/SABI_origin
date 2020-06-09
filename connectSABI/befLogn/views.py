@@ -1,6 +1,7 @@
 from django.shortcuts import redirect, render
 from django.core.mail import send_mail
 from django.contrib import messages
+from django.contrib.auth.models import auth, User
 from connectSABI import settings
 from random import random
 from . import forms
@@ -12,17 +13,33 @@ def index(request):
 
 
 def register(request):
-    regEmail = request.POST.get('registerEmail')
-    otp = int(1000000*random())
-    print('User Email: ', settings.EMAIL_HOST_USER)
-    print('User Password: ', settings.EMAIL_HOST_PASSWORD)
-    form = forms.OTPform()
+    regEmail = request.GET.get('registerEmail')
+    form = forms.Signupform()
     context = {
         'form': form,
-        'name': 'Akarsh'
+        'pMatch': True,
+        'uName': False
     }
-    mailer('SABI Confirmation', 'This is your OTP: '+str(otp), regEmail)
-    return render(request, 'register.html', context)
+    if request.method == 'POST':
+        form = forms.Signupform(request.POST)
+        if form.is_valid():
+            fName = form.cleaned_data['fName']
+            lName = form.cleaned_data['lName']
+            uName = form.cleaned_data['uName']
+            password = form.cleaned_data['password']
+            cpassword = form.cleaned_data['cpassword']
+            if(password != cpassword):
+                context['pMatch'] = False
+            elif User.objects.filter(username=uName).exists():
+                context['uName'] = True
+            else:
+                user = User.objects.create_user(
+                    username=uName, password=password, email=regEmail, first_name=fName, last_name=lName)
+                user.save()
+                # redirect to a new URL:
+                context['success'] = True
+
+    return render(request, 'befLogn/register.html', context)
 
 
 def mailer(subject, content, receiver):
@@ -39,5 +56,3 @@ def formCheck(request):
         'name': 'Akarsh'
     }
     return render(request, 'confirmationPage.html', context)
-
-    
