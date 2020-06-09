@@ -198,15 +198,13 @@
         </div>
         {% endfor %}
         {% if not pMatch%}
-        <p>Passwords do not match</p><br>
+        <p style="color:red;">Passwords do not match</p>
         {%endif%}
         {% if uName%}
-        <p>Username not available</p><br>
+        <p style="color:red;">Username not available</p>
         {%endif%}
         {% if success%}
-        <p>Sign up successfull</p><br>
-        <a href="/">Click here</a>
-        <p>to login</p><br>
+        <p style="color:green;">Sign up successfull <br> <a href="/">Click here to login</a></p>
         {%endif%}
         <!-- <div class="form-group">
           <label for="firstname"><strong>Firstname</strong></label>
